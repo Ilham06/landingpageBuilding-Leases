@@ -50,11 +50,35 @@
 }
 
 .search-box input {
-	size: .5em;
+	border: none;
+	font-size: 12px;
 }
 
+/*.search-col::after {
+	content: '';
+	display: inline-block;
+	position: relative;
+	top: -60px;
+	left: 150px;
+	width: 1px;
+	height: 60%;
+	background-color: #666;
+}*/
+
 .search-btn {
-	transform: translateX(-20px);
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FF7048;
+	cursor: pointer;
+}
+
+.search-btn i {
+	color: #fff;
+	font-size: 24px;
 }
 
 /*recommend*/
@@ -71,6 +95,57 @@
 	font-size: 16;
 }
 
+.recommend-box {
+	padding-top: 23px;
+	padding-left: 23px;
+	border-radius: 10px;
+}
+
+.recommend-box img {
+	border-radius: 10px;
+}
+
+.recommend-box i {
+	color: #999;
+	margin-right: 5px;
+}
+
+.recommend-box h4 {
+	font-size: 18px;
+}
+
+.recommend-box p {
+	font-size: 12px;
+	font-weight: 400;
+	color: #999;
+}
+
+.price {
+	font-size: 24px;
+	color: #3A8375;
+}
+
+/*gallery*/
+
+.gallery h3 {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.gallery p {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.gallery-box img {
+	width: 90%;
+}
+
+.gallery-box .box-last img {
+	width: 80%;
+	height: 60%;
+}
+
 /*utility*/
 
 .btn-login {
@@ -83,4 +158,21 @@
 	font-size: 20px;
 	/*font-weight: 500;*/
 	padding-right: 3px 5px;
+}
+
+/*responsive*/
+@media (max-width: 768px) { 
+	.display-4 {
+	font-size: 50px;
+	/*padding: 20px 100px;*/
+	}
+
+	.lead {
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.search-btn {
+		transform: translateX(-40px);
+	}
 }
